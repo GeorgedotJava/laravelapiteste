@@ -1,0 +1,25 @@
+GET http://localhost:8000/api/posts HTTP/1.1
+
+###
+
+
+POST http://localhost:8000/api/posts HTTP/1.1
+
+Content-Type: application/json
+
+{
+    "title": "Meu terceiro titulo",
+    
+    "content": "Meu terceiro post"
+}
+
+###
+
+PUT http://localhost:8000/api/posts/1
+
+Content-Type: application/json
+
+{
+    "title": "Meu outro titulo(update)",
+    "content": "Meu outro conteudo(update)",
+}
